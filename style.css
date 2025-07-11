@@ -49,7 +49,7 @@ a{
   font-weight: 500;
   
 }
-
+/*  This will highlight the text when pointer is hovering over the navigation bar*/ 
 .nav-links li a:hover {
   color: #00e6e6;
 }
@@ -67,7 +67,7 @@ a{
   background: white;
   border-radius: 5px;
 }
-
+/*Responsiveness for other screens*/ 
 @media screen and (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -88,7 +88,7 @@ a{
     display: flex;
   }
 }
-
+/*For hero banner different styling to make it look good*/ 
 .hero {
     background: url(galaxy.jpg) no-repeat center center/cover;
     height: 100vh;
@@ -182,12 +182,13 @@ a{
 }
 .video-wrapper iframe {
   position: absolute;
+  border:none;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-/*Fotter*/ 
+/*Footer*/ 
 footer {
   padding: 20px;
   background-color: #0b0e1a;
