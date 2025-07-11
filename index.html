@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar VR</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Stellar VR</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#missions">Missions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#video">Reference Video</a></li>
+    </ul>
+    <div class="games">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>    
+    <header class="hero"> 
+        <div class="hero-content">
+        <h1> Stellar VR</h1>
+        <p> Enter the future of virtual reality</p>    
+        <a href="#missions" class="cta">Begin Your Mission </a>
+        </div>
+    </header>
+<!--For About section-->
+<section id="about" class="about">
+    <h2>What is stellar VR</h2>
+<p> Stellar VR is a revolutionary space exploration experience. Through galaxies, decode alien languages and survive epic challenges - all from our state of art. </p>
+</section>
+<!--Card section-->
+<section id="missions" class="cards-section">
+<h2> Choose your missions</h2>
+<div class="card-container">
+    <div class="card">
+        <img src="rohit-choudhari-pE37k0imUDs-unsplash.jpg" alt="mission 1">
+   <h3>Moon light</h3>
+   <p> Uncover secrets that are hidden behind the Moon</p>
+    </div>
+    <div class="card">
+        <img src="Moon.jpg" alt="Mission 2">
+        <h3>Dark Night</h3>
+        <p>Escape a black hole</p>
+    </div>
+    <div class="card">
+        <img src="sci fi.jpg" alt="mission 3">
+        <h3>Quantum Travel</h3>
+        <p> Travel and solve the alien puzzles in zero gravity</p>
+    </div>
+</div>
+</section>
+<!--For embedded video-->
+<section id="video" class="video">
+    <h2>Watch how to play VR games as a beginner</h2>
+    <div class="video-wrapper">
+         <iframe src="https://www.youtube.com/embed/Ll5ywZZFM0A" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+<!--footer-->
+<footer id="contact">
+    <p>2025 Stellar VR. All Rights are reserved.</p>
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Contact</a>
+    </div>
+</footer>
+<!-- To make the navigation bar work on the mobile devices we need javascript-->
+<script>
+  const games = document.querySelector('.games');
+  const navLinks = document.querySelector('.nav-links');
+
+  games.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
